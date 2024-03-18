@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 590ef18be3394f74b880d82fac385463, type: 3}
+  m_Name: Thunder Sword
+  m_EditorClassIdentifier: 
+  itemType: 1
+  itemName: Thunder Sword
+  itemIcon: {fileID: 367297872, guid: a9ca9a41598dd2e44b125928045c518f, type: 3}
+  itemId: d781408672613f845809a807d69720ba
+  dropChance: 0
+  equipmentType: 0
+  itemCooldown: 0
+  itemEffects:
+  - {fileID: 11400000, guid: 96d164f1d9cffae45ba8731e7346df8c, type: 2}
+  strength: 20
+  agility: 0
+  intelligence: 10
+  vitality: 10
+  damage: 100
+  critChance: 0
+  critPower: 0
+  health: 10
+  armor: 0
+  evasion: 0
+  magicResistance: 0
+  fireDamage: 0
+  iceDamage: 0
+  lightingDamage: 3
+  craftingMaterials:
+  - data: {fileID: 11400000, guid: 839fd2910ad77e744a35af1a16bb4118, type: 2}
+    stackSize: 5
+  - data: {fileID: 11400000, guid: a180bc7902d002b4e930905c4affb542, type: 2}
+    stackSize: 3
+  - data: {fileID: 11400000, guid: 1fc54958788ad4b49acce7f1d0989161, type: 2}
+    stackSize: 5
+  - data: {fileID: 11400000, guid: eb240d8e2c8358d448769b8c5bb1af05, type: 2}
+    stackSize: 3
