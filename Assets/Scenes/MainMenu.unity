@@ -1510,6 +1510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: MainScene
   continueButton: {fileID: 1853159837}
+  blackImage: {fileID: 1132118260}
   fadeScreen: {fileID: 1599154866}
 --- !u!114 &2004458720
 MonoBehaviour:
@@ -1871,7 +1872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6036800689052844779, guid: 80becc15be2dbf749b5f942a5336e7eb, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

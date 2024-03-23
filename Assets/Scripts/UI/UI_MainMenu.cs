@@ -7,12 +7,16 @@ public class UI_MainMenu : MonoBehaviour
 {
     [SerializeField] private string sceneName = "MainScene";
     [SerializeField] private GameObject continueButton;
+    [SerializeField] private GameObject blackImage;
     [SerializeField] UI_FadeScreen fadeScreen;
 
     private void Start()
     {
         if (SaveManager.instance.HasSavedData() == false)
+        {
             continueButton.SetActive(false);
+            blackImage.SetActive(false);
+        }
     }
 
     public void ContinueGame()

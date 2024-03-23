@@ -3815,7 +3815,7 @@ MonoBehaviour:
     [Only one sword upgrade can be
     choose]'
   lockedSkillColor: {r: 0.49056602, g: 0.40957633, b: 0.40957633, a: 1}
-  unlocked: 1
+  unlocked: 0
   shouldBeUnlocked:
   - {fileID: 710618388}
   shouldBeLocked:
@@ -8318,6 +8318,10 @@ PrefabInstance:
     - target: {fileID: 5413061283600725298, guid: c1a2356bb51a6194d985ea5b453dfdfb, type: 3}
       propertyPath: lightingDamage.baseValue
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5413061283600725298, guid: c1a2356bb51a6194d985ea5b453dfdfb, type: 3}
+      propertyPath: soulsDropAmount.baseValue
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 5413061283600725300, guid: c1a2356bb51a6194d985ea5b453dfdfb, type: 3}
       propertyPath: m_Name
@@ -41013,6 +41017,10 @@ PrefabInstance:
       propertyPath: lightingDamage.baseValue
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5413061283600725298, guid: c1a2356bb51a6194d985ea5b453dfdfb, type: 3}
+      propertyPath: soulsDropAmount.baseValue
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 5413061283600725300, guid: c1a2356bb51a6194d985ea5b453dfdfb, type: 3}
       propertyPath: m_Name
       value: Enemy_Skeleton
@@ -47842,7 +47850,7 @@ MonoBehaviour:
     baseValue: 5
     modifiers: 
   damage:
-    baseValue: 20000
+    baseValue: 100
     modifiers: 
   critChance:
     baseValue: 25
@@ -47889,10 +47897,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a60703bfb2805a349b6b0ab7d17a7923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleItemDrop: 0
+  possibleItemDrop: 10
   possibleDrop:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: a180bc7902d002b4e930905c4affb542, type: 2}
+  - {fileID: 11400000, guid: 5a6cd81aaf50a814cbd0bfa954c58a68, type: 2}
+  - {fileID: 11400000, guid: 69369925ed773dd4f904c6f9ad97e8a1, type: 2}
+  - {fileID: 11400000, guid: 9337930988e275044b8e74fa4ca51510, type: 2}
   dropPrefab: {fileID: 8730514117533583190, guid: 7aaa3324c1c4b054ebebaafe3343bf25, type: 3}
   chanceToLooseItems: 20
   chanceToLooseMaterials: 75
@@ -116882,8 +116892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d35e0d15cac490d47acb42402d8144e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingItems:
-  - {fileID: 11400000, guid: 80c04e02cab30284c834fcee3d24d83c, type: 2}
+  startingItems: []
   equipment: []
   inventory: []
   stash: []
