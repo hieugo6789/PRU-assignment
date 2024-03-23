@@ -3,6 +3,8 @@
 
 public class DeathBringerDeadState : EnemyState
 {
+
+
     private Enemy_DeathBringer enemy;
 
     public DeathBringerDeadState(Enemy _enemyBase, EnemyStateMachine _stateMachine, string _animBoolName, Enemy_DeathBringer enemy) : base(_enemyBase, _stateMachine, _animBoolName)

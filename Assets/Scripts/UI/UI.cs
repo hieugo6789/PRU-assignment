@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UI : MonoBehaviour, ISaveManager
 {
@@ -136,15 +137,18 @@ public class UI : MonoBehaviour, ISaveManager
     public void SwitchOnWinScreen()
     {
         fadeScreen.FadeOut();
+
         StartCoroutine(WinScreenCorutione());
     }
 
     IEnumerator WinScreenCorutione()
     {
-        yield return new WaitForSeconds(1);
-        winText.SetActive(true);
-        yield return new WaitForSeconds(1.5f);
-        newGameButton.SetActive(true);
+        // yield return new WaitForSeconds(1);
+        // winText.SetActive(true);
+        yield return new WaitForSeconds(2.5f);
+        // newGameButton.SetActive(true);
+        // GameManager.instance.PauseGame(true);
+        SceneManager.LoadScene("WonScene");
 
     }
 

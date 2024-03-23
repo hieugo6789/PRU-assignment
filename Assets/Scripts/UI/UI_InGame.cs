@@ -31,7 +31,7 @@ public class UI_InGame : MonoBehaviour
         skills = SkillManager.instance;
     }
 
-    
+
     void Update()
     {
         UpdateSoulsUI();
@@ -52,7 +52,7 @@ public class UI_InGame : MonoBehaviour
             SetCooldownOf(blackholeImage);
 
 
-        if (Input.GetKeyDown(KeyCode.Alpha1) && Inventory.instance.GetEquipment(EquipmentType.Flask) != null)
+        if (Input.GetKeyDown(KeyCode.E) && Inventory.instance.GetEquipment(EquipmentType.Flask) != null)
             SetCooldownOf(flaskImage);
 
         CheckCooldownOf(dashImage, skills.dash.cooldown);
